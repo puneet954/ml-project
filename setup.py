@@ -16,4 +16,4 @@ author='puneet',
 author_email='puneetraghav094@gmail.com',
 packages=find_packages(),
 install_requires=get_requirements('requirements.txt')
-)
+) 
