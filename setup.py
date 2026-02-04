@@ -9,11 +9,13 @@ def get_requirements(file_path:str)->List[str]:
         reqiurements=[req.replace('\n',"") for req in requirements]
 
     return requirements
+
 setup(
 name='mlproject',
 version='0.0.1',
 author='puneet',
 author_email='puneetraghav094@gmail.com',
-packages=find_packages(),
+packages=find_packages(where="src"),
 install_requires=get_requirements('requirements.txt')
+
 ) 
